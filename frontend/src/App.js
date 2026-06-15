@@ -18,7 +18,7 @@ function App() {
   const [loggedIn, setLoggedIn] = useState(false);
   const [cart, setCart] = useState([]);
 
-  const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const addToCart = (product) => {
     setCart([...cart, product]);
